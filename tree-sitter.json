@@ -7,7 +7,6 @@
       "title": "Ocen",
       "scope": "source.ocen",
       "file-types": [
-        "ocen",
         "oc"
       ],
       "injection-regex": "^ocen$",
