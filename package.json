@@ -1,0 +1,41 @@
+{
+    "name": "ocen-tree-sitter",
+    "version": "1.0.0",
+    "description": "A tree-sitter grammar for the Ocen programming language",
+    "main": "bindings/node",
+    "scripts": {
+      "generate": "tree-sitter generate",
+      "test": "tree-sitter test",
+      "format": "prettier --write grammar.js",
+      "check-formatted": "prettier --check grammar.js",
+      "build-wasm": "tree-sitter build-wasm"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/ocen-lang/ocen-tree-sitter.git"
+    },
+    "keywords": ["ocen", "tree-sitter" ],
+    "author": "Mustafa Quraish",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/ocen-lang/ocen-tree-sitter/issues"
+    },
+    "homepage": "https://github.com/ocen-lang/ocen-tree-sitter#readme",
+    "dependencies": {
+      "nan": "^2.18.0"
+    },
+    "devDependencies": {
+      "prettier": "^2.5.1",
+      "tree-sitter-cli": "^0.20.6",
+      "node-gyp": "^10.0.1"
+    },
+    "tree-sitter": [
+      {
+        "scope": "source.ocen",
+        "file-types": [
+          "oc"
+        ],
+        "injection-regex": "^oc$"
+      }
+    ]
+  }
